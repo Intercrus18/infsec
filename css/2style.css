@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.logo-link>img {
+    max-width: 160px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 58px;
+}
+
+.menu-link {
+    font-size: 18px;
+    line-height: 18px;
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+.icon-img {
+    width: 24px;
+    height: 24px;
+}
