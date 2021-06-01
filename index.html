@@ -4,57 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <title>InfSec - онлайн-ресурс для обучения информационной безопасности</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>InfSec</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-            <!-- left block -->
-                <div class="header__leftblock">
-                    <a href="" class="header__logo"></a>
-                    <div class="header__menu menu">
-                        <div class="menu__icon">
-                            <span></span>
-                        </div>
-                        <nav class="menu__body">
-                            <ul class="menu__list">
-                                <li><a href="" class="menu__link">Статьи</a></li>
-                                <li><a href="" class="menu__link">Курсы</a></li>
-                                <li><a href="" class="menu__link">Тесты</a></li>
-                                <li><a href="" class="menu__link">Случайное</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="index.html" class="logo-link">
+                        <img src="img/icons/logo.png" alt="logo">
+                    </a>
                 </div>
-                <!-- right block -->
-                <div class="header__rightblock">
-                    <div class="header__icons icons">
-                        <a href="" class="icons__link"><img src="img/icons/vk-icon.svg" alt="vk icon link" width="32" height="32"></a>
-                        <a href="" class="icons__link"><img src="img/icons/youtube-icon.svg" alt="youtube icon link" width="32" height="32"></a>
-                        <a href="" class="icons__link"><img src="img/icons/fb-icon.svg" alt="facebook icon link" width="32" height="32"></a>
+                <!-- /.col -->
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Тесты</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Случайное</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col -->
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
                     </div>
-                    <div class="header__search search">
-                        <form>
-                            <input type="text" placeholder="Искать здесь..." class="search__input">
-                            <button type="submit" class="search__button">Искать</button>
-                        </form>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
                       </div>
                 </div>
-                
-
-                
-
-
-                <!-- <div class="header__search search">
-                    <input class="search__input" placeholder="Search input"></input>
-
-                </div> -->
+                <!-- /.col -->
             </div>
-        </header>
-    </div>
-    <script src="js/main.js"></script>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-12 header-descr">
+                    <h1 class="header-title">InfSec</h1>
+                    <div class="header-text">- онлайн-ресурс для обучения информационной безопасности. Здесь собрана полезная и интересная информация как для студентов, начинающих свой путь в данной сфере, так и для профессионалов своего дела.</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row main-row">
+                <div class="col d-flex justify-content-center">
+                    <h2 class="row-title">Популярные курсы</h2>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row main-row">
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/blockchain.jpg" alt="" class="block-image">
+                        <a href="#" class="block-descr">Основы информационной безопасности. Часть 1: Виды угроз</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/criptography.jpg" alt="" class="block-image">
+                        <a href="#" class="block-descr">Основы информационной безопасности. Часть 2. Информация и средства её защиты</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/inform-security.jpg" alt="" class="block-image">
+                        <a href="course1.html" class="block-descr">Введение в криптографию и шифрование. Часть первая</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row row-button">
+                <button type="button" class="btn btn-primary" onclick="window.location.href = 'courses.html'">Больше курсов</button>
+            </div>
+            <hr>
+            <div class="row main-row">
+                <div class="col d-flex justify-content-center">
+                    <h2 class="row-title">Популярные статьи</h2>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row main-row">
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/blockchain.jpg" alt="" class="block-image">
+                        <a href="articles/article1.html" class="block-descr">Усиливаем безопасность парольных политик Microsoft</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/blockchain.jpg" alt="" class="block-image">
+                        <a href="articles/article2.html" class="block-descr">Как собрать данные при расследовании киберинцидентов</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/blockchain.jpg" alt="" class="block-image">
+                        <a href="articles/article3.html" class="block-descr height2">Классификация данных как фундамент ИБ</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row row-button">
+                <button type="button" class="btn btn-primary" onclick="window.location.href = 'articles.html'">Больше статей</button>
+            </div>
+            <hr>
+            <div class="row main-row">
+                <div class="col d-flex justify-content-center">
+                    <h2 class="row-title">Популярные тесты</h2>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row main-row">
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/blockchain.jpg" alt="" class="block-image">
+                        <a href="#" class="block-descr">Текст</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/blockchain.jpg" alt="" class="block-image">
+                        <a href="#" class="block-descr">Текст</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="col-block">
+                        <img src="img/courses/blockchain.jpg" alt="" class="block-image">
+                        <a href="#" class="block-descr">Текст</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row row-button">
+                <button type="button" class="btn btn-primary">Больше тестов</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
